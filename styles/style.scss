@@ -1,0 +1,30 @@
+// Обнуление стилей
+@import "nullstyle";
+
+// Шрифты
+@import "fonts";
+
+
+@import '../libs/slick/slick.css';
+@import '../libs/slick-lightbox/slick-lightbox.css';
+
+body {
+  font-family: "Bitter";
+}
+
+.container {
+  width: 1320px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@import "header";
+
+@import "intro";
+
+@import "features";
+
+@import "slider";
