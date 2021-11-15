@@ -5,35 +5,49 @@
   .slick-next{
       position: absolute;
       z-index: 20;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 48%;
       z-index: 20;
       width: 30px;
       height: 30px;
       color: transparent;
-      font-size: 24px;
-      font-weight: bold;
-      text-align: center;
-      background: rgba(230, 239, 240, 0.21);
-      border: 1px solid rgba(230, 239, 240, 0.47);
-      border-radius: 50%;
+      background-color: transparent;
+      border-bottom: 4px solid black;
+      border-left: 4px solid black;
       &:before{
           position: relative;
           z-index: 10;
       }
       &:hover {
           color: transparent;
-          background: #fefdd6;
-          &:active{
-              background: #fefdd6;
-          }
+          border-bottom: 4px solid #fefdd6;
+          border-left: 4px solid #fefdd6;
+
       }
+    //   &::after {
+    //     content: "";
+    //     border-bottom: 1px solid #fefdd6;
+    //     border-left: 1px solid #fefdd6;
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     width: 30px;
+    //     height: 30px;
+    //     z-index: 15;
+    //   }
   }
   .slick-prev{
       left: 20px;
+      transform: rotate(45deg);
+      &:active{
+        transform: rotate(45deg) scale(0.9);
+      }
   }
   .slick-next{
       right: 20px;
+      transform: rotate(225deg);
+      &:active{
+        transform: rotate(225deg) scale(0.9);
+      }
   }
   .slick-slide{
       margin: 0 10px;
